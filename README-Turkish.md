@@ -96,8 +96,8 @@ Kullanım: `auto-py-to-exe [-db] [-c [CONFIG]] [-o [PATH]] [filename]`
 
 | Argüman                                                      | Tip                | Açıklama                                                                                                                                                                     |
 | ------------------------------------------------------------ | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filename                                                     | konumsal/opsiyonel | Kullanıcı arayüzündeki "Betik Konumu" alanını önceden doldurun.                                                                                                            |
-| -db, --default-browser                                       | opsiyonel          | Varsayılan tarayıcıyı kullanarak kullanıcı arayüzünü açın (Chrome olmayabilir). Chrome'u bulmaya çalışmaz.                                                                |
+| filename                                                     | konumsal/opsiyonel | Kullanıcı arayüzündeki "Komut Dosyası Konumu" alanını önceden doldurun.                                                                                                      |
+| -db, --default-browser                                       | opsiyonel          | Varsayılan tarayıcıyı (Chrome olabilir) kullanarak kullanıcı arayüzünü kalemleyin. Chrome'u bulmaya çalışmaz.                                                                |
 | -nu, --no-ui                                                 | opsiyonel          | Kullanıcı arayüzünü bir tarayıcıda açmaya çalışmayın ve uygulamanın erişilebileceği adresi yazdırın.                                                                         |
 | -c [CONFIG], --config [CONFIG]                               | opsiyonel          | Kullanıcı arayüzünü önceden doldurmak için bir yapılandırma dosyası (json) sağlayın. Bunlar ayarlar sekmesinde oluşturulabilir.                                            |
 | -o [PATH], --output-dir [PATH]                               | opsiyonel          | Varsayılan çıktı dizinini ayarlayın. Bu, kullanıcı arayüzünde hala değiştirilebilir.                                                                                         |
@@ -114,20 +114,20 @@ Bilgisayarların taşınması farklı dizin yapıları anlamına gelebileceğind
 
 ## Video
 
-Başlamanıza yardımcı olacak görsel bir şeye ihtiyacınız varsa, [Bu projenin orijinal sürümü için bir video hazırladım (İngilizce)](https://youtu.be/OZSZHmWSOeM); bazı şeyler farklı olabilir ama aynı kavramlar hâlâ geçerli.
+Başlamanıza yardımcı olacak görsel bir şeye ihtiyacınız varsa, [Bu projenin orijinal sürümü için bir video hazırladım (İngilizce)](https://youtu.be/OZSZHmWSOeM); bazı şeyler farklı olabilir ama aynı kavramlar hala geçerli.
 
 ## Aracı Kullanmayla İlgili Sorunlar
 
 Paketlenmiş yürütülebilir dosyayla ilgili sorun yaşıyorsanız veya genel olarak bu aracı kullanıyorsanız,
 [auto-py-to-exe kullanırken sık karşılaşılan sorunlar hakkındaki blog yazımı (İngilizce)](https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=readme_link&utm_campaign=auto_py_to_exe_help) okumanızı tavsiye ederim. Bu yazı, Python betiklerini paketleme hakkında bilmeniz gereken şeyleri ve genellikle yanlış giden şeyler için çözümleri kapsar.
 
-Bu araçla ilgili bir sorun bulduğunuzu düşünüyorsanız, lütfen [bir sorun bildirimi oluşturun (İngilizce)](https://github.com/brentvollebregt/auto-py-to-exe/issues/new/choose) ("Get started"ı tıklayın) ve "Bug report" seçeneği tarafından sağlanan şablonu doldurun. Sorununuz yalnızca uygulamanızla ilgiliyse, lütfen bu depoda bir sorun bildirimi oluşturmayın - bunun yerine yardım gönderisine, videoya yorum yapın veya yeni bir tartışma oluşturun.
+Bu araçla ilgili bir sorun bulduğunuzu düşünüyorsanız, lütfen [bir sorun bildirimi oluşturun (İngilizce)](https://github.com/brentvollebregt/auto-py-to-exe/issues/new/choose) "Bug report" seçeneği tarafından sağlanan şablonu doldurun. Sorununuz yalnızca uygulamanızla ilgiliyse, lütfen bu depoda bir sorun bildirimi oluşturmayın - bunun yerine yardım gönderisine, videoya yorum yapın veya yeni bir tartışma oluşturun.
 
-> Şablonu doldururken, neler olduğunu net bir şekilde açıkladığınızdan, yeniden oluşturma adımlarını ve bir [minimal yeniden üretilebilir örnek (İngilizce)](https://stackoverflow.com/help/minimal-reproducible-example) verdiğinizden ve ne olması gerektiğine inandığınızı açıkladığınızdan emin olun. Bunlar olmadan, sorunu belirlemek daha uzun sürecektir.
+> Şablonu doldururken, neler olduğunu açık bir şekilde belirttiğinizden, sorunu yeniden oluşturma adımlarını paylaştığınızdan ve bir [minimal tekrarlanabilir örnek (İngilizce)](https://stackoverflow.com/help/minimal-reproducible-example) sunduğunuzdan emin olun. Ayrıca beklediğiniz sonucun ne olduğunu da açıklayın. Bu bilgiler olmadan sorununuzu çözmek daha uzun zaman alacaktır.
 
 ## Python 2.7 Desteği
 
-9 Ağustos 2020'de yayınlanan [PyInstaller v4.0](https://github.com/pyinstaller/pyinstaller/releases/tag/v4.0) itibarıyla Python 2.7 artık desteklenmemektedir; PyInstaller'ın daha eski bir sürümünü yükleyerek bu aracı Python 2.7 ile kullanmaya devam edebilirsiniz. [PyInstaller v3.6](https://github.com/pyinstaller/pyinstaller/releases/tag/v3.6), Python 2.7'yi destekleyen son sürümdü; bunu yüklemek için önce PyInstaller'ın mevcut sürümlerini kaldırın ve ardından `python -m pip install pyinstaller==3.6` komutunu çalıştırın.
+9 Ağustos 2020'de yayınlanan [PyInstaller v4.0](https://github.com/pyinstaller/pyinstaller/releases/tag/v4.0) itibarıyla Python 2.7 artık desteklenmemektedir; PyInstaller'ın daha eski bir sürümünü yükleyerek bu aracı Python 2.7 ile kullanmaya devam edebilirsiniz. [PyInstaller v3.6](https://github.com/pyinstaller/pyinstaller/releases/tag/v3.6), Python 2.7'yi destekleyen son sürümdü; bunu yüklemek için önce PyInstaller'ın mevcut sürümlerini kaldırın ve ardından "python -m pip install pyinstaller==3.6" komutunu çalıştırın.
 
 ## Test
 
